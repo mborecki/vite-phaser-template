@@ -1,0 +1,30 @@
+{
+  "name": "hunting-1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "predev": "npm run sprites & npm run audio",
+    "dev": "vite",
+    "prebuild": "npm run sprites & npm run audio",
+    "build": "tsc && vite build",
+    "sprites": "node ./sprites/spritesheet.js",
+    "audio": "node ./audio/audio.js"
+  },
+  "devDependencies": {
+    "audiosprite": "^0.7.2",
+    "sass-embedded": "^1.83.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "@types/howler": "^2.2.12",
+    "axios": "^1.7.9",
+    "free-tex-packer-core": "^0.3.4",
+    "howler": "^2.2.4",
+    "imagemin": "^9.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
+    "phaser": "^3.87.0"
+  }
+}
