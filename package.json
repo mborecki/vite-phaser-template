@@ -1,7 +1,7 @@
 {
-  "name": "hunting-1",
+  "name": "vite-phaser-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "predev": "npm run sprites & npm run audio",
